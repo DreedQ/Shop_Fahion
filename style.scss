@@ -1,0 +1,293 @@
+ $siteWidth: 1140px;
+ * {
+     margin: 0;
+     border: 0;
+ }
+ 
+ body {
+     font-family: 'Lato', sans-serif;
+ }
+ 
+ .container {
+     max-width: $siteWidth;
+     margin: 0 auto;
+ }
+ 
+ .header {
+     background-color: #222222;
+     width: 100%;
+     .nav__wrap {
+         display: flex;
+         justify-content: space-between;
+         padding: 18px 0 17px 0;
+     }
+     .nav__left {
+         display: flex;
+     }
+     .nav__right {
+         display: flex;
+     }
+     ul {
+         display: flex;
+         justify-content: space-between;
+         align-self: center;
+         padding: 0;
+     }
+     .right__nav {
+         list-style-type: none;
+         margin-right: 41px;
+         align-self: center;
+         padding: 0;
+     }
+     .left__nav {
+         list-style-type: none;
+         margin-left: 33px;
+         align-self: center;
+         padding: 0;
+     }
+ }
+ 
+ .intro {
+     max-width: 100%;
+     background: #F1E4E6;
+     .intro__wrap {
+         height: 764px;
+         background-image: url(/pic/Intro_1.png);
+         background-repeat: no-repeat;
+         background-position: -225px 0;
+         display: flex;
+         align-items: center;
+         justify-content: flex-end;
+     }
+     .intro__text {
+         max-width: 377px;
+         padding-left: 20px;
+         border-left: 12px solid #F16D7F;
+     }
+     h1 {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: 700;
+         font-size: 32px;
+         line-height: 38px;
+         color: #222222;
+         .bold__text {
+             font-weight: 900;
+             font-size: 48px;
+             line-height: 58px;
+         }
+         .colorized__text {
+             color: #F16D7F;
+         }
+     }
+ }
+ 
+ .offer__inner {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     margin-top: 65px;
+     .offer__card {
+         max-width: $siteWidth/3-30;
+         height: 260px;
+         margin-bottom: 30px;
+         position: relative;
+         display: flex;
+         justify-content: center;
+     }
+     .offer__card:last-child {
+         max-width: 100%;
+         max-height: 180px;
+     }
+     .offer__h2 {
+         position: absolute;
+         text-align: center;
+         align-self: center;
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 19px;
+         color: #FFFFFF;
+     }
+     .colorized__text {
+         font-style: Lato;
+         font-weight: 700;
+         font-style: normal;
+         font-size: 24px;
+         line-height: height 28px;
+         color: #F16D7F;
+     }
+ }
+ 
+ .item {
+     .item__shell {
+         margin-top: 96px;
+     }
+     .item__shell__inner {
+         display: flex;
+         justify-content: space-between;
+         flex-wrap: wrap;
+     }
+     .item__header {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 30px;
+         line-height: 36px;
+         color: #222222;
+         text-align: center;
+         margin-bottom: 6px;
+     }
+     .item__text {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 14px;
+         line-height: 17px;
+         color: #9F9F9F;
+         text-align: center;
+     }
+     .item__inner {
+         display: block;
+         align-items: center;
+         margin: 48px 0 48px 0;
+         max-width: $siteWidth/3-30;
+         background-color: #F8F8F8
+     }
+     .item__card {
+         max-width: $siteWidth/3-30;
+         max-height: 581px;
+         background-color: #F7E4E2;
+     }
+     .item__card__pic {
+         max-width: $siteWidth/3-30;
+     }
+     .item__description {
+         max-width: $siteWidth/3-30;
+         max-height: 117px;
+         max-width: 315px;
+         margin: 25px 28px 20px 16px;
+     }
+     .item__name {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 13px;
+         line-height: 16px;
+         color: #000000;
+         margin-top: 25px;
+         text-decoration: none;
+     }
+     .item__descr {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 14px;
+         line-height: 17px;
+         color: #5D5D5D;
+         margin-top: 13px;
+         margin-bottom: 18px;
+     }
+     .item__price {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 19px;
+         color: #F16D7F;
+     }
+     .item__btn {
+         display: flex;
+         justify-content: center;
+     }
+     .item__btn__anchor {
+         top: 50%;
+         text-decoration: none;
+         font-family: Lato;
+         font-style: normal;
+         font-weight: normal;
+         font-size: 16px;
+         line-height: 19px;
+         color: #F26376;
+         border: 1px solid #000000;
+         box-sizing: border-box;
+         padding: 15px 39px;
+     }
+ }
+ 
+ .outro {
+     background-color: #222224;
+     .outro__container {
+         height: 341px;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         margin-top: 95px;
+         color: pink;
+     }
+     .outro__block {
+         width: 360px;
+         height: 135px;
+         display: block;
+         text-align: center;
+     }
+     .outro__img {
+         height: 45px;
+         display: flex;
+         justify-content: center;
+     }
+     h4 {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: 400;
+         font-size: 19.96px;
+         line-height: 24px;
+         color: #FBFBFB;
+         margin-top: 28px;
+     }
+     .outro__paragraph {
+         font-family: Lato;
+         font-style: normal;
+         font-weight: 300;
+         font-size: 13.972px;
+         line-height: 17px;
+         text-align: center;
+         color: #FBFBFB;
+         margin-top: 16px;
+     }
+ }
+ 
+ .subscribe {
+     height: 448px;
+     background-image: url(/pic/Sub_background.jpg);
+     display: flex;
+     justify-content: space-evenly;
+     .subscribe__inner {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+     }
+     .subscribe__block {
+         align-items: center;
+     }
+     .subscribe__info {
+         width: 360px;
+         height: 225px;
+         text-align: center;
+     }
+     .subscribe__info__text {
+         font-family: Lato;
+         font-style: italic;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 24px;
+         text-align: center;
+         color: #222224;
+     }
+ }
+ 
+ .classic__footer {
+     background-color: #222224;
+     height: 79px;
+ }
