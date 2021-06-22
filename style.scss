@@ -398,7 +398,12 @@ body {
         background: #E1E1E1;
     }
     .submit__email:focus~.submit__btn {
+        transition: 1s;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
     }
     .submit__btn {
         border: none;

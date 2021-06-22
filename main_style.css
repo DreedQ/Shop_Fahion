@@ -248,16 +248,14 @@
 }
 
 .cart .cart__sub-box {
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 300;
+  font-weight: normal;
   font-size: 11px;
   line-height: 13px;
   color: #4A4A4A;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 39px 34px 12px 0;
+  margin: 39px 25px 12px 0;
 }
 
 .cart .cart__grand-box {
@@ -268,7 +266,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 37px 0 0;
+  margin: 0 37px 21px 0;
 }
 
 .cart .cart__sub,
@@ -278,6 +276,7 @@
   background-color: #F5F3F3;
   font-style: normal;
   font-weight: bold;
+  padding-left: 25px;
 }
 
 .cart .cart__sub {
@@ -305,7 +304,6 @@
   font-size: 16px;
   line-height: 19px;
   color: #222222;
-  margin-bottom: 42px;
 }
 
 .cart .cart__total-btn {
@@ -1588,4 +1586,146 @@ body {
 
 .nav__box .active {
   opacity: 1;
+}
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.registration__form {
+  margin: 64px 0 96px 0;
+}
+
+.registration__form label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+}
+
+.registration__form__input {
+  width: 359px;
+  height: 44px;
+  border: 1px solid #A4A4A4;
+  margin-top: 20px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding-left: 17px;
+  opacity: .8;
+}
+
+.registration__form form {
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration__form .registration__sex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #000000;
+  margin: 33px 0 26px 0;
+}
+
+.registration__form .registration__sex input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.registration__form .registration__sex label {
+  margin-right: 20px;
+}
+
+.registration__form span {
+  margin-top: 15px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  opacity: .8;
+}
+
+.registration__form button {
+  margin-top: 39px;
+  width: 167px;
+  height: 50px;
+  background: #F16D7F;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.registration__form button img {
+  margin-left: 20px;
+}
+
+.registration .registration__info {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  width: 652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 64px;
+}
+
+.registration .registration__info h2 {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.registration .registration__info p {
+  margin-bottom: 5px;
+}
+
+.registration .registration__info li {
+  margin: 16px 0 0 -10px;
+  list-style-image: url(pic/tick.svg);
+  padding-left: 22px;
+}
+
+.registration li:hover p:hover h2:hover {
+  font-size: 26px;
+  font-weight: bold;
 }
