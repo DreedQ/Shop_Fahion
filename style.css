@@ -53,6 +53,7 @@ body {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  position: relative;
 }
 
 .header .nav__link:not(:last-child) {
@@ -80,6 +81,24 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header .nav__link-count {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  padding: 5px 8px;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  position: absolute;
+  top: -10px;
+  right: -20px;
 }
 
 .intro {
@@ -292,7 +311,7 @@ body {
   z-index: 1;
 }
 
-.item .item__card:hover .overlay {
+.item .item__inner:hover .overlay {
   opacity: 1;
 }
 
@@ -536,13 +555,13 @@ body {
 }
 
 .subscribe .submit__email:focus ~ .submit__btn {
-  transition: 1s;
+  transition: .4 s;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  -webkit-transition: 1s;
-  -moz-transition: 1s;
-  -ms-transition: 1s;
-  -o-transition: 1s;
+  -webkit-transition: .4 s;
+  -moz-transition: .4 s;
+  -ms-transition: .4 s;
+  -o-transition: .4 s;
 }
 
 .subscribe .submit__btn {
@@ -611,11 +630,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   cursor: pointer;
-  transition: .8 s linear;
-  -webkit-transition: .8 s linear;
-  -moz-transition: .8 s linear;
-  -ms-transition: .8 s linear;
-  -o-transition: .8 s linear;
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
 }
 
 .footer .footer__icon:not(liast-child) {
@@ -625,11 +644,11 @@ body {
 .footer .fab {
   color: black;
   font-size: 16px;
-  transition: .8 linear;
-  -webkit-transition: .8 linear;
-  -moz-transition: .8 linear;
-  -ms-transition: .8 linear;
-  -o-transition: .8 linear;
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
 }
 
 .footer .footer__icon:hover {

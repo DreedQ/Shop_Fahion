@@ -627,7 +627,7 @@ body {
   z-index: 1;
 }
 
-.item .item__card:hover .overlay {
+.item .item__inner:hover .overlay {
   opacity: 1;
 }
 
@@ -871,8 +871,13 @@ body {
 }
 
 .subscribe .submit__email:focus ~ .submit__btn {
+  transition: 1s;
   -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .subscribe .submit__btn {
@@ -1690,6 +1695,32 @@ body {
   margin-left: 20px;
 }
 
+.registration__form button:hover {
+  transition: .7s;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  -webkit-transition: .7s;
+  -moz-transition: .7s;
+  -ms-transition: .7s;
+  -o-transition: .7s;
+}
+
+.registration__form button:hover img {
+  transition: 1s;
+  transform: scale3d(2);
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  -webkit-transform: scale3d(2);
+  -moz-transform: scale3d(2);
+  -ms-transform: scale3d(2);
+  -o-transform: scale3d(2);
+}
+
 .registration .registration__info {
   font-style: normal;
   font-weight: 300;
@@ -1725,7 +1756,26 @@ body {
   padding-left: 22px;
 }
 
-.registration li:hover p:hover h2:hover {
-  font-size: 26px;
+.registration .registration__info h2:hover,
+.registration .registration__info li:hover,
+.registration .registration__info p:hover {
+  transition: .3s;
   font-weight: bold;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.subscribe__pic img:hover {
+  transition: .4s;
+  transform: scale(1.2);
+  -webkit-transition: .4s;
+  -moz-transition: .4s;
+  -ms-transition: .4s;
+  -o-transition: .4s;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
