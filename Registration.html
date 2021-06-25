@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main_style.css" />
+    <link rel="stylesheet" href="registration_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0bb1ae9ffd.js" crossorigin="anonymous"></script>
+    <title>LUXERIOUS FASHION</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav__wrap">
+            <nav class="nav__left">
+                <ul>
+                    <li class="nav__link">
+                        <a href="#"><img src="pic/logo.svg" alt="Logo" /></a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#"><img src="pic/seek.svg" alt="Seek" /></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav__right">
+                <ul>
+                    <li class="nav__link">
+                        <a href="index.html"><img src="pic/menu.svg" alt="Menu" /></a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#"><img src="pic/user.svg" alt="Cabinet" /></a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="catalog.html"><img src="pic/chart.svg" alt="Chart" /></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container breadcrumb__inner">
+            <h2 class="breabkrumb__newarrival" href="#">REGISTRATION</h2>
+            <!-- <div class="breadcrumb__nav">
+                <a href="index.html" class="breadcrumb__nav__link">home</a><span> / </span>
+                <a href="#" class="breadcrumb__nav__link">man</a><span> / </span>
+                <a href="catalog.html" class="breadcrumb__nav__link">new arrivals</a>
+            </div> -->
+        </div>
+    </section>
+    <main class=" container registration">
+        <section class="registration__form">
+            <form>
+                <label for="name">Your Name</label>
+                <input class="registration__form__input" type="text" name="name" id="name" placeholder="First Name">
+                <input class="registration__form__input" type="text" name="l_name" id="l_name" placeholder="Last Name">
+                <p class="registration__sex">
+                    <input type="radio" name="sex" id="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="sex" id="Female">
+                    <label for="Female">Female</label>
+                </p>
+                <br>
+                <label for="login">Login details</label>
+                <input class="registration__form__input" type="text" name="login" id="login" placeholder="Email">
+                <input class="registration__form__input" type="password" name="password" id="password" placeholder="Password">
+                <span>Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</span>
+                <button>JOIN NOW <img src="pic/Arrow_right.svg" alt=""></button>
+            </form>
+        </section>
+        <section class="registration__info">
+            <h2>LOYALTY HAS ITS PERKS</h2>
+            <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
+            <ul>
+                <li>15% off welcome offer</li>
+                <li>Free shipping, returns and exchanges on all orders </li>
+                <li>$10 off a purchase on your birthday</li>
+                <li>Early access to products</li>
+                <li>Exclusive offers & rewards</li>
+            </ul>
+
+        </section>
+    </main>
+    <footer>
+        <section class="subscribe">
+            <div class="cover__layer">
+                <div class="container subscribe__inner">
+                    <div class="subscribe__info">
+                        <div class="subscribe__pic">
+                            <img src="pic/Intersect.png" alt="Picture" />
+                        </div>
+                        <p class="subscribe__info__text">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                        </p>
+                    </div>
+                    <div class="subscribe__block">
+                        <h3>SUBSCRIBE</h3>
+                        <p class="subscribe__block__text">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </p>
+                        <form action="#" class="submit">
+                            <input placeholder="Enter Your Email" type="email" class="submit__email" pattern="[A-Za-z0-9_-.]{3,}@[a-z]{3,}.[a-z]{2,}" />
+                            <input type="submit" value="Subscribe" class="submit__btn" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container footer___bottom">
+                <p class="rights">© 2021 Brand All Rights Reserved.</p>
+
+                <div class="footer__icon__box">
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>

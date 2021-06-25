@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Cart.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/0bb1ae9ffd.js" crossorigin="anonymous"></script>
+    <title>LUXERIOUS FASHION</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav__wrap">
+            <nav class="nav__left">
+                <ul>
+                    <li class="nav__link">
+                        <a href="#"><img src="pic/logo.svg" alt="Logo" /></a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#"><img src="pic/seek.svg" alt="Seek" /></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="nav__right">
+                <ul>
+                    <li class="nav__link">
+                        <a href="index.html"><img src="pic/menu.svg" alt="Menu" /></a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#"><img src="pic/user.svg" alt="Cabinet" /></a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="catalog.html"><img src="pic/chart.svg" alt="Chart" /></a>
+                        <p class="nav__link-count">5</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Breadcrumb -->
+    <section class="breadcrumb">
+        <div class="container breadcrumb__inner">
+            <h2 class="breabkrumb__newarrival" href="#">SHOPPING CART</h2>
+            <!-- <div class="breadcrumb__nav">
+                <a href="index.html" class="breadcrumb__nav__link">home</a><span> / </span>
+                <a href="#" class="breadcrumb__nav__link">man</a><span> / </span>
+                <a href="catalog.html" class="breadcrumb__nav__link">new arrivals</a>
+            </div> -->
+        </div>
+    </section>
+    <main class="cart">
+        <div class="container cart__box">
+            <section class="cart__products">
+                <article class="cart__item">
+                    <div class="item__img">
+                        <img class="item__img__cart" src="pic/Product_2.png" alt="Picture" />
+                    </div>
+
+                    <div class="item__description__cart">
+                        <h3><a class="item__name" href="#">MANGO PEOPLE <br> T-SHIRT</a></h3>
+                        <div class="item__parameters">
+                            <p class="item__price">
+                                Price: <span class="red__text">$300</span>
+                            </p>
+                            <p class="item__color">Color: Red</p>
+                            <p class="item__size">Size: Xl</p>
+                            <form action="#">
+                                <label for="item__count">Quantity: </label>
+                                <input type="number" value="3" name="item__count" id="item__count" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item__close">
+                        <img src="pic/Closing_icon.svg" alt="" />
+                    </div>
+                </article>
+                <article class="cart__item">
+                    <div class="item__img">
+                        <img class="item__img__cart" src="pic/Img_catalog/Layer 51.png" alt="Picture" />
+                    </div>
+
+                    <div class="item__description__cart">
+                        <h3><a class="item__name" href="#">MANGO PEOPLE <br> T-SHIRT</a></h3>
+                        <div class="item__parameters">
+                            <p class="item__price">
+                                Price: <span class="red__text">$300</span>
+                            </p>
+                            <p class="item__color">Color: Red</p>
+                            <p class="item__size">Size: Xl</p>
+                            <form action="#">
+                                <label for="item__count">Quantity: </label>
+                                <input type="number" value="2" name="item__count" id="item__count" />
+                            </form>
+                        </div>
+                    </div>
+                    <div class="item__close">
+                        <img src="pic/Closing_icon.svg" alt="" />
+                    </div>
+                </article>
+                <div class="cart__btn__box">
+                    <div class="cart__btn">
+                        <a class="cart__btn__anchor" href="#">CLEAR SHOPPING CART</a>
+                    </div>
+                    <div class="cart__btn">
+                        <a class="cart__btn__anchor" href="#">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cart__details">
+                <section class="shipping__adress">
+                    <form action="#">
+                        <legend>SHIPPING ADRESS</legend>
+                        <input class="country" type="text" placeholder="Country" name="country" id="Country" pattern="[A-Za-z]{2,}" />
+                        <input class="state" type="text" placeholder="State" name="State" id="state" pattern="[A-Za-z]{3,}" />
+                        <input class="postcode" type="text" placeholder="Postcode / Zip" name="postcode" id="Postcode" pattern="[0-9]{6}" />
+                        <input class="submit__cart" type="submit" value="GET A QUOTE" />
+                    </form>
+                </section>
+                <section class="cart__total">
+                    <div class="cart__total-count">
+                        <div class="cart__sub-box">
+                            <label for="text">SUB TOTAL</label>
+                            <input readonly type="text" class="cart__sub" value="$900" />
+                        </div>
+
+                        <div class="cart__grand-box">
+                            <label for="text">GRAND TOTAL</label>
+                            <input readonly type="text" class="cart__grand" value="$900"></input>
+                        </div>
+                    </div>
+                    <div class="cart__total-btnbox">
+                        <div class="cart__total-btn">
+                            <a href="#" class="cart__total-anchor">PROCEED TO CHECKOUT</a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <section class="subscribe">
+            <div class="cover__layer">
+                <div class="container subscribe__inner">
+                    <div class="subscribe__info">
+                        <div class="subscribe__pic">
+                            <img src="pic/Intersect.png" alt="Picture" />
+                        </div>
+                        <p class="subscribe__info__text">
+                            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“
+                        </p>
+                    </div>
+                    <div class="subscribe__block">
+                        <h3>SUBSCRIBE</h3>
+                        <p class="subscribe__block__text">
+                            FOR OUR NEWLETTER AND PROMOTION
+                        </p>
+                        <form action="#" class="submit">
+                            <input placeholder="Enter Your Email" type="email" class="submit__email" pattern="[A-Za-z0-9_-.]{3,}@[a-z]{3,}.[a-z]{2,}" />
+                            <input type="submit" value="Subscribe" class="submit__btn" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container footer___bottom">
+                <p class="rights">© 2021 Brand All Rights Reserved.</p>
+
+                <div class="footer__icon__box">
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+
+                    <div class="footer__icon">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
