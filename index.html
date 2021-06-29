@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main_style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/0bb1ae9ffd.js" crossorigin="anonymous"></script>
@@ -16,24 +16,57 @@
     <header class="header">
         <div class="container nav__wrap">
             <nav class="nav__left">
-                <ul>
-                    <li class="nav__link">
+                <ul class="nav__box">
+                    <li class="nav__icon">
                         <a href="#"><img src="pic/logo.svg" alt="Logo" /></a>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__icon">
                         <a href="#"><img src="pic/seek.svg" alt="Seek" /></a>
                     </li>
                 </ul>
             </nav>
             <nav class="nav__right">
-                <ul>
-                    <li class="nav__link">
-                        <a href="index.html"><img src="pic/menu.svg" alt="Menu" /></a>
+                <ul class="nav__box">
+                    <li class="nav__icon">
+                        <input type="checkbox" name="menu" id="menu">
+                        <label class="nav__check" for="menu">&#9776</label>
+                        <div class="nav__menu">
+                            <div class="nav__wrapper">
+                                <label class="nav__closer" for="menu">&#128937;</label>
+                                <h2>MENU</h3>
+                                    <h3>MAN</h3>
+                                    <ul class="nav__list">
+                                        <li class="nav_link">Accessories</li>
+                                        <li class="nav_link">Bags</li>
+                                        <li class="nav_link">Denim</li>
+                                        <li class="nav_link">T-Shirts</li>
+                                    </ul>
+                                    <h3>WOMAN</h3>
+                                    <ul class="nav__list">
+                                        <li class="nav_link">Accessories</li>
+                                        <li class="nav_link">Jackets & Coats</li>
+                                        <li class="nav_link">Polos</li>
+                                        <li class="nav_link">T-Shirts</li>
+                                        <li class="nav_link">Shirts</li>
+                                    </ul>
+                                    <h3>KIDS</h3>
+                                    <ul class="nav__list">
+                                        <li class="nav_link">Accessories</li>
+                                        <li class="nav_link">Jackets & Coats</li>
+                                        <li class="nav_link">Polos</li>
+                                        <li class="nav_link">T-Shirts</li>
+                                        <li class="nav_link">Shirts</li>
+                                        <li class="nav_link">Bags</li>
+                                    </ul>
+
+                            </div>
+
+                        </div>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__icon">
                         <a href="#"><img src="pic/user.svg" alt="Cabinet" /></a>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__icon">
                         <a href="Cart.html"><img src="pic/chart.svg" alt="Chart" /></a>
                     </li>
                 </ul>
@@ -79,46 +112,39 @@
             <div class="offer__card">
                 <img src="pic/Offer_pic2.png " alt="Picutre " />
                 <div class="dark__layer__max">
-                    <h3 class="offer__header">
-                        LUXIROUS & TRENDY<br /><span class="colorized__text">ACCESORIES</span
-              >
-            </h3>
-          </div>
+                    <h3 class="offer__header">LUXIROUS & TRENDY<br />
+                        <span class="colorized__text">ACCESORIES</span>
+                    </h3>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
 
     <main class="item">
-      <div class="container item__shell">
-        <h2 class="item__header">Fetured Items</h2>
-        <h4 class="item__text">
-          Shop for items based on what we featured in this week
-        </h4>
-        <section class="item__shell__inner">
+        <div class="container item__shell">
+            <h2 class="item__header">Fetured Items</h2>
+            <h4 class="item__text">
+                Shop for items based on what we featured in this week
+            </h4>
+            <section class="item__shell__inner">
 
-          <article class="item__inner">
-            <div class="item__card">
-              <img
-                class="item__card__pic"
-                src="pic/Product_6.png"
-                alt="Picture"
-              />
-              <div class="overlay">
-                <button class="add__tocart">
+                <article class="item__inner">
+                    <div class="item__card">
+                        <img class="item__card__pic" src="pic/Product_6.png" alt="Picture" />
+                        <div class="overlay">
+                            <button class="add__tocart">
                   <img src="pic/chart.svg" alt="Cart" />Add to Cart
                 </button>
-              </div>
-            </div>
+                        </div>
+                    </div>
 
-            <div class="item__description">
-              <h3><a class="item__name" href="#">ELLERY X M'O CAPSULE</a></h3>
-              <p class="item__descr">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda
-                Operandi.
-              </p>
-              <span class="item__price">$52.00</span>
-                </div>
+                    <div class="item__description">
+                        <h3><a class="item__name" href="#">ELLERY X M'O CAPSULE</a></h3>
+                        <p class="item__descr">
+                            Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+                        </p>
+                        <span class="item__price">$52.00</span>
+                    </div>
                 </article>
 
                 <article class="item__inner">
@@ -210,9 +236,9 @@
                         <span class="item__price">$52.00</span>
                     </div>
                 </article>
-    </section>
-    <div class="item__btn">
-        <a class="item__btn__anchor" href="catalog.html">Browse All Product</a
+            </section>
+            <div class="item__btn">
+                <a class="item__btn__anchor" href="catalog.html">Browse All Product</a
           >
         </div>
       </div>
@@ -294,23 +320,23 @@
           <div class="footer__icon__box">
             <div class="footer__icon">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
-    </div>
+            </div>
 
-    <div class="footer__icon">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-    </div>
+            <div class="footer__icon">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
 
-    <div class="footer__icon">
-        <a href="#"><i class="fab fa-pinterest-p"></i></a>
-    </div>
+            <div class="footer__icon">
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
 
-    <div class="footer__icon">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-    </div>
-    </div>
-    </div>
-    </section>
-    </footer>
+            <div class="footer__icon">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        </div>
+        </section>
+        </footer>
 </body>
 
 </html>

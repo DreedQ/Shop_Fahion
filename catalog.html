@@ -16,24 +16,57 @@
     <header class="header">
         <div class="container nav__wrap">
             <nav class="nav__left">
-                <ul>
-                    <li class="nav__link">
-                        <a href="index.html"><img src="pic/logo.svg" alt="Logo" /></a>
+                <ul class="nav__box">
+                    <li class="nav__icon">
+                        <a href="#"><img src="pic/logo.svg" alt="Logo" /></a>
                     </li>
-                    <li class="nav__link">
-                        <a href="#"><img src="pic/seek.svg" alt="Serch" /></a>
+                    <li class="nav__icon">
+                        <a href="#"><img src="pic/seek.svg" alt="Seek" /></a>
                     </li>
                 </ul>
             </nav>
             <nav class="nav__right">
-                <ul>
-                    <li class="nav__link">
-                        <a href="index.html"><img src="pic/menu.svg" alt="Menu" /></a>
+                <ul class="nav__box">
+                    <li class="nav__icon">
+                        <input type="checkbox" name="menu" id="menu">
+                        <label class="nav__check" for="menu">&#9776</label>
+                        <div class="nav__menu">
+                            <div class="nav__wrapper">
+                                <label class="nav__closer" for="menu">&#128937;</label>
+                                <h2>MENU</h3>
+                                    <h3>MAN</h3>
+                                    <ul class="nav__list">
+                                        <li class="nav_link">Accessories</li>
+                                        <li class="nav_link">Bags</li>
+                                        <li class="nav_link">Denim</li>
+                                        <li class="nav_link">T-Shirts</li>
+                                    </ul>
+                                    <h3>WOMAN</h3>
+                                    <ul class="nav__list">
+                                        <li class="nav_link">Accessories</li>
+                                        <li class="nav_link">Jackets & Coats</li>
+                                        <li class="nav_link">Polos</li>
+                                        <li class="nav_link">T-Shirts</li>
+                                        <li class="nav_link">Shirts</li>
+                                    </ul>
+                                    <h3>KIDS</h3>
+                                    <ul class="nav__list">
+                                        <li class="nav_link">Accessories</li>
+                                        <li class="nav_link">Jackets & Coats</li>
+                                        <li class="nav_link">Polos</li>
+                                        <li class="nav_link">T-Shirts</li>
+                                        <li class="nav_link">Shirts</li>
+                                        <li class="nav_link">Bags</li>
+                                    </ul>
+
+                            </div>
+
+                        </div>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__icon">
                         <a href="#"><img src="pic/user.svg" alt="Cabinet" /></a>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__icon">
                         <a href="Cart.html"><img src="pic/chart.svg" alt="Chart" /></a>
                     </li>
                 </ul>
@@ -56,10 +89,12 @@
     <main class="catalog item">
         <section class="container catalog__shell item__shell">
             <section class="catalog__nav">
-                <details class="catalog__filter drop__menu">
-                    <summary class="catalog__nav__filter">
-                        Filter
-                        <img class="catalog__filter__icon" src="pic/Img_catalog/Menu_filter_icon.svg" alt="Img" />
+                <details class="catalog__filter ">
+                    <summary class="catalog__nav-filter">
+                        FILTER
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"/>
+                            </svg>
                     </summary>
                     <details>
                         <summary class="catalog__nav__item">Category</summary>
