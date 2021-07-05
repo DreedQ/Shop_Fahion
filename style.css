@@ -18,6 +18,7 @@ body {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .header {
@@ -46,6 +47,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 32px;
 }
 
 .header .nav__icon {
@@ -277,8 +279,8 @@ body {
 }
 
 .offer__inner .offer__card {
-  max-width: 350px;
-  height: 260px;
+  max-width: 32%;
+  max-height: 260px;
   margin-bottom: 30px;
   position: relative;
   display: -webkit-box;
@@ -290,10 +292,15 @@ body {
   position: relative;
 }
 
+.offer__inner .offer__card img {
+  width: 100%;
+  height: 100%;
+}
+
 .offer__inner .dark__layer {
   background-color: rgba(0, 0, 0, 0.5);
-  width: 360px;
-  height: 260px;
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,18 +399,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 30px;
-  max-width: 350px;
+  max-width: 360px;
   background-color: #F8F8F8;
 }
 
 .item .item__card {
-  max-width: 350px;
+  max-width: 360px;
+  max-width: 100%;
   position: relative;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .item .item__card__pic {
-  max-width: 350px;
+  max-width: 360px;
 }
 
 .item .overlay {
@@ -418,7 +432,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 350px;
+  max-width: 360px;
+  width: 100%;
   height: 420px;
   top: 0;
   left: 0;
@@ -518,12 +533,17 @@ body {
   padding: 15px 39px;
 }
 
+.item .item__btn .item__btn__anchor:hover {
+  background-color: #F16D7F;
+  color: #fff;
+}
+
 .outro {
   background-color: #222224;
 }
 
 .outro .outro__container {
-  height: 341px;
+  min-height: 341px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,8 +558,9 @@ body {
 }
 
 .outro .outro__block {
-  width: 360px;
-  height: 135px;
+  max-width: 360px;
+  width: 100%;
+  min-height: 135px;
   display: block;
   text-align: center;
 }
