@@ -470,7 +470,7 @@ body {
   top: 75px;
   right: 0;
   max-height: 764px;
-  height: calc(100vh - 75px);
+  height: 100vh;
   overflow: auto;
   z-index: 10;
   background-color: #FFFFFF;
@@ -741,6 +741,8 @@ body {
 .item .item__card {
   max-width: 360px;
   max-width: 100%;
+  max-height: 420px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: -webkit-box;
@@ -1185,9 +1187,10 @@ body {
   position: absolute;
 }
 
-.catalog .drop__menu[open] {
+.catalog .drop__menu[open] ~ .catalog__shadowed {
   -webkit-box-shadow: 0 0 4px #4D4D4D;
           box-shadow: 0 0 4px #4D4D4D;
+  background-color: blueviolet;
 }
 
 .catalog__shell {
@@ -1235,6 +1238,7 @@ body {
 
 .catalog__filter[open] > summary {
   color: #EF5B70;
+  fill: #EF5B70;
 }
 
 .catalog__nav-filter {
